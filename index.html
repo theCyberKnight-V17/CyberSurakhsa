@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSuraksha: Defending the Digital Frontier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body class="bg-black text-white">
+    <div id="particles-js"></div>
+    <header class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold neon-text">CyberSuraksha</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#attack-types" class="nav-link">Attack Types</a>
+                <a href="#case-studies" class="nav-link">Case Studies</a>
+                <a href="#protection" class="nav-link">Protection</a>
+                <a href="#Tools-And-Resources" class="nav-link">Tools And Resources</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#newsletter" class="nav-link">Stay Informed</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="flex flex-col space-y-4 p-6">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#attack-types" class="nav-link">Attack Types</a>
+                <a href="#case-studies" class="nav-link">Case Studies</a>
+                <a href="#protection" class="nav-link">Protection</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#newsletter" class="nav-link">Stay Informed</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <section id="home" class="h-screen flex items-center justify-center text-center">
+          <div class="max-w-md mx-auto">
+              <h1 class="text-4xl md:text-6xl font-bold mb-4 glitch text-center" data-text="CyberSuraksha">CyberSuraksha</h1>
+              <p class="text-lg md:text-xl mb-8">Defending Against Social Engineering Attacks</p>
+              <a href="#about" class="cyber-button text-lg">Learn More</a>
+          </div>
+      </section>
+  
+      <div class="section-divider"></div>
+  
+      <section id="about" class="section py-20 md:py-40">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-8 neon-text">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <p class="mb-4">Welcome to CyberSuraksha, your go-to platform for raising awareness about the critical importance of cybersecurity and defending against the ever-growing threat of social engineering attacks. In today's digital age, cybercriminals increasingly target individuals through manipulation and deceit, exploiting human psychology rather than technical vulnerabilities.</p>
+                    <p>Our mission is to empower individuals and organizations with the knowledge and tools they need to stay secure online.</p>
+                </div>
+                <div class="neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Mission:</h3>
+                    <p>At CyberSuraksha, we aim to create a safer digital world by:
+                        <br>
+                        <ul style="list-style-type:square">
+                            <li>Spreading Awareness: Educating people about the different forms of cyberattacks, particularly social engineering attacks, which rely on deception rather than direct hacking.</li>
+                            <br>
+                            <li>Providing Solutions: Offering practical tips and strategies for individuals and businesses to protect themselves from malicious actors.</li>
+                            <br>
+                            <li>Building a Community: Creating a space where cybersecurity enthusiasts and professionals can come together to share knowledge, insights, and the latest trends in cybersecurity.</li>
+                      </ul>
+                    </p>
+                </div>
+
+                <div class="neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Why It Matters / Focus on Social Engineering</h3>
+                    <p>In today's interconnected world, cybersecurity awareness is crucial for protecting personal information, financial assets, and organizational data from sophisticated social engineering attacks.</p><br>
+                    <p>Social engineering is one of the most effective and damaging forms of cybercrime because it targets the weakest link in cybersecurity: humans. Phishing, vishing, baiting, and pretexting attacks trick people into revealing sensitive information, often leading to severe personal and organizational losses. Through awareness and education, we can drastically reduce the success rate of these attacks.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  
+      <div class="section-divider"></div>
+  
+      <section id="attack-types" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-8 neon-text">Social Engineering Attack Types</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Phishing</h3>
+                    <p>Phishing is a type of scam that uses fake emails, text messages, or websites to impersonate real organizations, aiming to deceive people into sharing sensitive information like passwords, credit card numbers, or account details.</p>
+                    <p class="mt-2 italic">Example: you might get an email that looks like it's from your bank, asking you to click a link to "verify" your account. However, that link takes you to a counterfeit website created to capture your login information.</p>
+                </div>
+
+                <div class="service-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Baiting</h3>
+                    <p>In a baiting attack, attackers lure victims with the promise of something appealing, such as free software, discounts, or music downloads, to deceive users into sharing personal information or downloading harmful software.
+                        <p class="mt-2 italic">Example: A user discovers a USB drive marked "Confidential" in the parking lot and, driven by curiosity, plugs it into their computer, unknowingly installing malware.</p>
+                </div>
+
+                <div class="service-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Pretexting</h3>
+                    <p>Pretexting is the act of crafting a false scenario to gather information or gain access. In this tactic, the attacker assumes a false identity, often posing as an authority figure or a trusted organization.<p class="mt-2 italic"></p> Example: an attacker might impersonate an IT support technician, requesting an employee's network login credentials by claiming they need them for maintenance or troubleshooting purposes.</p>
+                </div>   
+
+                
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="Spear Phishing">Spear Phishing <i class="fas fa-fish text-neon-blue"></i></h3>
+                    <p>A targeted version of phishing, using personalized information to make the attack more credible.</p>
+                    <p class="mt-2 italic">Example: An employee receives a seemingly legitimate email from a coworker asking for sensitive information.</p>
+                </div>
+
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="Tailgating">Tailgating <i class="fas fa-user-secret text-neon-blue"></i></h3>
+                    <p>An unauthorized person follows an authorized person into a restricted area, exploiting trust or inattention.</p>
+                    <p class="mt-2 italic">Example: An attacker enters a secured area by closely following an employee with key card access.</p>
+                </div>
+
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="Vishing">Vishing <i class="fas fa-phone-alt text-neon-blue"></i></h3>
+                    <p>Voice phishing uses phone calls to trick victims into providing sensitive information.</p>
+                    <p class="mt-2 italic">Example: An attacker calls, pretending to be from the victim's bank, asking to verify account details.</p>
+                </div>
+
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="Malware">Malware <i class="fas fa-bug text-neon-blue"></i></h3>
+                    <p>Malicious software that can damage systems, steal data, or gain unauthorized access to networks.</p>
+                    <p class="mt-2 italic">Example: Ransomware encrypts files and demands payment for their release.</p>
+                </div>
+
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="SQL Injection">SQL Injection <i class="fas fa-database text-neon-blue"></i></h3>
+                    <p>Attacks web applications by inserting malicious SQL code into queries to access or manipulate databases.</p>
+                    <p class="mt-2 italic">Example: Attackers bypass authentication by entering SQL code in vulnerable login forms.</p>
+                </div>
+
+                <div class="attack-type-card neon-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 glitch-text" data-text="Ransomware">Ransomware <i class="fas fa-lock text-neon-blue"></i></h3>
+                    <p>Encrypts a victim's data and demands a ransom payment for its release.</p>
+                    <p class="mt-2 italic">Example: The WannaCry ransomware affected over 200,000 computers in 2017.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+      <div class="section-divider"></div>
+
+<section id="case-studies" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8 neon-text">Real-World Case Studies</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="case-study-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">The Twitter Bitcoin Scam (2020)</h3>
+                <p>In July 2020, Twitter faced a major cybersecurity breach where high-profile accounts, including those of Elon Musk, Bill Gates, and Barack Obama, were hacked. The attackers posted fraudulent tweets promoting a Bitcoin scam, promising to double any Bitcoin sent to a specific address.</p>
+                <p class="mt-2">The attackers gained access to Twitter's internal tools by tricking Twitter employees through social engineering techniques. They pretended to be company insiders and convinced employees to hand over their credentials, giving them administrative access to control high-profile accounts.</p>
+                <p class="mt-2">The scam resulted in over $120,000 in stolen Bitcoin. More importantly, it revealed significant vulnerabilities in Twitter's internal security protocols, especially regarding employee access to sensitive systems. The incident highlighted the importance of employee training and vigilance against social engineering attacks.</p>
+            </div>
+
+            <div class="case-study-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">The Sony Pictures Hack (2014)</h3>
+                <p> In November 2014, Sony Pictures Entertainment suffered a massive cyberattack, which led to the leak of sensitive internal data, including unreleased films, employee personal information, confidential emails, and financial documents. The attack was carried out by a group calling themselves the “Guardians of Peace.”</p>
+
+                <p class="mt-2"> The attackers used spear-phishing emails to trick Sony employees into giving up their login credentials. Once inside the network, the attackers gained control of critical systems, allowing them to exfiltrate large amounts of sensitive data.</p>
+
+                <p class="mt-2">The breach caused significant financial and reputational damage to Sony Pictures. The attack exposed personal details of over 47,000 employees and caused a delay in the release of the film The Interview. It also led to heightened tensions between the U.S. and North Korea, as the attack was allegedly linked to the controversial nature of the film.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="protection" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8 neon-text">How to Protect Yourself</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Employee Training and Awareness</h3>
+                <ul style="list-style-type:square">
+                 <li>Educate employees and users about common social engineering tactics like phishing, pretexting, and baiting.</li>
+                 <br><li>Awareness is the first line of defense. Employees should be trained to recognize suspicious emails, phone calls, and other attempts to gather sensitive information.</li>
+                 <br><li>Conduct regular security awareness training, simulate phishing attacks to test   employees, and provide resources on identifying potential threats.</li>
+                </ul>
+            </div>
+
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Multi-Factor Authentication (MFA)</h3>
+                <ul style="list-style-type:square">
+                 <li>Use MFA to add an extra layer of security beyond just a password, requiring users to verify their identity with something they know (password) and something they have (a mobile phone or security token).</li>
+                 <br><li>Even if attackers steal a password through social engineering, they cannot access accounts without the second factor.</li>
+                 <br><li>Require MFA for accessing sensitive data and critical systems across the organization.</li>
+                </ul>
+            </div>
+
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Verify Requests for Sensitive Information</h3>
+                <ul style="list-style-type:square">
+                 <li>Implement policies that require verification before disclosing sensitive information, especially over the phone or email.</li>
+                 <br><li>Attackers often impersonate trusted individuals (e.g., IT support or senior management). Verification ensures that the request is legitimate.</li>
+                 <br><li>Use multi-step verification methods, such as calling back the requester using official contact details, or implementing internal tools to verify identities.</li>
+                </ul>
+            </div>
+
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Strong Password Policies</h3>
+                <ul style="list-style-type:square">
+                 <li>Enforce the use of complex passwords and encourage the use of password managers to create and store unique, strong passwords.</li>
+                 <br><li>Weak or reused passwords are easier for attackers to guess or obtain through social   engineering tactics like phishing.</li>
+                 <br><li>Require users to regularly update passwords, enforce password complexity rules, and encourage or mandate the use of password managers.</li>
+                </ul>
+            </div>
+
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Implement Email and Web Filters</h3>
+                <ul style="list-style-type:square">
+                 <li>Use email filtering tools to block malicious emails and prevent phishing attacks before they reach users. Web filtering can block access to known malicious websites.</li>
+                 <br><li>Use email filtering tools to block malicious emails and prevent phishing attacks before they reach users. Web filtering can block access to known malicious websites.</li>
+                 <br><li>Set up filters to block suspicious attachments, links, and domains, and regularly update them to protect against new threats.</li>
+                </ul>
+            </div>
+
+            <div class="protection-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Regular Security Audits and Monitoring</h3>
+                <ul style="list-style-type:square">
+                 <li>Conduct routine audits of security policies and monitor network activity for signs of suspicious behavior.</li>
+                 <br><li>engineering attacks often involve initial reconnaissance. Monitoring for unusual access patterns or behavior can help detect an attack in its early stages.</li>
+                 <br><li>Use monitoring tools to track network and system activity, review access logs regularly, 
+                 and employ intrusion detection systems (IDS) to spot potential breaches.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="Tools-And-Resources" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8 neon-text">Tools and Resources</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="tool-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Anti-Phishing Tools</h3>
+                <ul class="list-disc list-inside">
+                    <h4>PhishTank</h4><br>
+                    <p>PhishTank is a free community site where users submit, verify, and share phishing websites. It helps you identify phishing sites and report suspicious URLs.</p><br>
+                    <p>Link:<a href="https://www.cisa.gov" target="_blank">PhishTank</a></p>
+                    <br>
+                    <h4>Microsoft Defender SmartScreen</h4>
+                    <p>Built into Microsoft products, SmartScreen warns users when they try to visit malicious websites or download harmful files.</p><br>
+                    <p>Link:<a href="https://www.microsoft.com/en-in/windows/?r=1" target="_blank">Microsoft Defender SmartScreen</a></p>
+                 </ul>
+            </div>
+
+            <div class="tool-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Password Management Tools</h3>
+                <ul class="list-disc list-inside">
+                    <h4>LastPass</h4><br>
+                    <p>LastPass securely stores your passwords and automatically fills them in for you, ensuring you don't need to remember multiple complex passwords.</p><br>
+                    <p>Link:<a href="https://www.lastpass.com/" target="_blank">LastPass</a></p>
+                    <br>
+                    <h4>Bitwarden</h4><br>
+                    <p>Bitwarden is a free, open-source password manager that helps you store and manage your passwords securely.</p><br>
+                    <p>Link:<a href="https://bitwarden.com/" target="_blank">Bitwarden</a></p>
+             </ul>
+            </div>
+
+            <div class="tool-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Two-Factor Authentication (2FA) Tools</h3>
+                <ul class="list-disc list-inside">
+                    <h4>Google Authenticator</h4><br>
+                    <p>Google Authenticator adds a second layer of protection to your accounts by generating unique codes that are required alongside your password.</p><br>
+                    <p>Link:<a href="https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai?hl=en" target="_blank">Google Authenticator</a></p>
+                    <br>
+          
+                    <h4>Authy</h4><br>
+                    <p>Authy is a 2FA app that supports multiple devices and backs up your tokens securely in the cloud.</p><br>
+                    <p>Link:<a href="https://authy.com/"target="_blank">Authy</a></p>
+                </ul>
+          </div>
+
+          <div class="tool-card neon-border p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Email Filtering and Monitoring Tools</h3>
+            <div class="list-disc list-inside">
+                <h4>SpamTitan</h4><br>
+                <p>SpamTitan is an advanced email security solution that filters out spam, phishing emails, and other malicious content before it reaches users.</p><br>
+                <p>Link:<a href="https://www.spamtitan.com/home-d/"target="_blank">SpamTitan</a></p>
+                <br>
+
+                <h4>Proofpoint Email Protection</h4><br>
+                <p>Proofpoint offers advanced email protection against phishing, malware, and business email compromise attacks.</p><br>
+                <p>Link:<a href="https://www.proofpoint.com/us"target="_blank">Proofpoint Email Protection</a></p>
+            </div>
+            
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="blog" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8 neon-text">CyberSuraksha Blog</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="blog-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Latest Phishing Techniques</h3>
+                <p>Stay informed about the most recent phishing tactics used by cybercriminals.</p>
+                <button class="cyber-button mt-4 inline-block read-more-btn" data-blog-id="1">Read More</button>
+            </div>
+            <div class="blog-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Social Engineering in the Age of AI</h3>
+                <p>Explore how artificial intelligence is changing the landscape of social engineering attacks.</p>
+                <button class="cyber-button mt-4 inline-block read-more-btn" data-blog-id="2">Read More</button>
+            </div>
+            <div class="blog-card neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Cybersecurity for Small Businesses</h3>
+                <p>Learn how small businesses can protect themselves from social engineering threats.</p>
+                <button class="cyber-button mt-4 inline-block read-more-btn" data-blog-id="3">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section id="faq" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-8 neon-text">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+            <div class="faq-item neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">What is social engineering?</h3>
+                <p>Social engineering is the art of manipulating people into giving up confidential information or performing actions that may compromise their security.</p>
+            </div>
+            <div class="faq-item neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">How can I recognize a phishing email?</h3>
+                <p>Look for suspicious sender addresses, urgent language, unexpected attachments, and requests for sensitive information. Always verify the source before taking any action.</p>
+            </div>
+            <div class="faq-item neon-border p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2">What should I do if I suspect I've been a victim of a social engineering attack?</h3>
+                <p>Immediately change your passwords, contact your IT department or service provider, and monitor your accounts for any suspicious activity.</p>
+            </div>
+        </div>
+    </div>
+</section>  
+      <div class="section-divider"></div>
+  
+      <section id="newsletter" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-8 neon-text">Stay Informed</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="mb-8">Sign up for our newsletter to receive early alerts about new cyber threats and ways to protect yourself.</p>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Email" class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="cyber-button w-full">Subscribe</button>
+                </form>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#" class="text-3xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-3xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-3xl"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="py-6">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 CyberSuraksha. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+
+    <!-- Add the blog post modal -->
+    <div id="blogModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="modal-content bg-gray-900 p-8 rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto">
+            <h2 id="blogTitle" class="text-3xl font-bold mb-4 neon-text"></h2>
+            <div id="blogContent" class="text-white mb-6"></div>
+            <button id="closeBlogModal" class="cyber-button">Close</button>
+        </div>
+    </div>
+</body>
+</html>
